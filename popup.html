@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Focus Extension</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+  </head>
+  <body>
+    <div id="bgAudio"></div>
+    <h1>Focus</h1>
+    <button id="onButton">On/Off</button>
+    <div>
+      <p>Listen to Some Tunes</p>
+      <button id="lofiButton">
+        <img
+        src="https://www.pngarts.com/files/7/Netflix-And-Chill-PNG-Image-Transparent-Background.png"
+        height="30px"
+        width="30px"
+        title="LoFi"
+      />
+      </button>
+      <button id="medButton">
+        <img
+        src="https://uwaterloo.ca/united-way/sites/ca.united-way/files/uploads/images/yoga.png"
+        height="30px"
+        width="30px"
+        style="border-radius: 15px"
+        title="Meditation"
+      />
+      </button>
+
+    </div>
+    <input id="input" type="text" placeholder="Blacklist a website" value />
+    <button id="submit">Submit</button>
+    <div id="blacklist">
+      <h2>Blacklisted Sites</h2>
+      <ul id="list"></ul>
+    </div>
+    <script src="background.js"></script>
+  </body>
+</html>

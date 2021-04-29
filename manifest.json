@@ -1,0 +1,23 @@
+{
+  "name": "Focus",
+  "description": "Stay focused and productive!",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["main.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "assets/focus.png",
+    "48": "assets/focus.png"
+  }
+}
