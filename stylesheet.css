@@ -39,6 +39,11 @@ button:active {
   filter: brightness(50%);
 }
 
+.music {
+  background: none;
+  border: none;
+}
+
 input {
   height: 24px;
   outline: none;
